@@ -73,5 +73,35 @@ public class Main {
         }
 
     }
+    void oddeven()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int x = sc.nextInt();
+        if(x%2==0)
+        {
+            System.out.println("even number");
+        }
+            else
+        {
+            System.out.println("odd number");
+        }
+    }
+    void reverse()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int x = sc.nextInt();
+        int reversee=0;
+        while (x != 0)
+        {
+             int remainder = x % 10;
+             reversee = reversee * 10 + remainder;
+            x =x/10;
+        }
+
+        System.out.println("Reversed number = "+ reversee);
+
+    }
 
 }
