@@ -32,5 +32,28 @@ void largest()
     }
 
 }
+    void smallest()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter 3 number");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int z=sc.nextInt();
+        if (x>y && x>z)
+        {
+            System.out.println("smallest number is"+x);
+        }
+        if (y<z && y<x)
+        {
+            System.out.println("smallest number is"+y);
+        }
+        if (z<y && z<x)
+        {
+            System.out.println("smallest number is"+y);
+        }
+
+
+    }
+
 
 }
